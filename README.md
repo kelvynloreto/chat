@@ -14,6 +14,12 @@
 - CRUD de usuarios con autenticacion y manejo de permisos
 - /users/:id DELETE, PUT
 - /users/me
+- /conversations
+- /conversations/:conversation_id
+- /conversations/:conversation_id/messages
+- /conversations/:conversation_id/messages/:message_id
+- /conversations/:conversation_id/participants
+- /conversations/:conversation_id/participants/:participant_id
 
 Orden
 1. app.js
