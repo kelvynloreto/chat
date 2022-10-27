@@ -1,3 +1,4 @@
+const e = require('express')
 const messageControllers = require('./messages.controllers')
 
 const getAllMessagesByConversation= (req, res) =>{
@@ -8,7 +9,10 @@ const getAllMessagesByConversation= (req, res) =>{
 if (data) {
     res.status(200).json(data)
 }
-res.status(404).json({message:"Invalid ID"})
+else{
+    res.status(404).json({message:"Invalid ID"})
+}
+
     })
     .catch(err => {
         res.status(400).json({ message: err.message })

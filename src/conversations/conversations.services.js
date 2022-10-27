@@ -25,6 +25,7 @@ const postConversations = (req, res) => {
                 res.status(400).json({ message: err.message })
             })
     }
+else{
     res.status(400).json({
         message: 'Missing Data',
         requiredFields: {
@@ -32,6 +33,7 @@ const postConversations = (req, res) => {
             imageUrl: 'string',
         }
     })
+}
 }
 
 
