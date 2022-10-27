@@ -17,12 +17,15 @@
 - /users/me
 
 # rutas de conversaciones
+- rutas donde se obtienen y se crean las conversaciones 
 - /conversations
 - /conversations/:conversation_id
 # rutas de mensaje
+- ruta donde se obtienen, se crean y se eliminan los mensajes de una conversacion
 - /conversations/:conversation_id/messages
 - /conversations/:conversation_id/messages/:message_id
 # rutas de participantes
+- ruta donde se obtienen, se crean y se eliminan los participantes de una conversacion
 - /conversations/:conversation_id/participants
 - /conversations/:conversation_id/participants/:participant_id
 
